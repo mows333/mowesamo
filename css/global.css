@@ -1,0 +1,110 @@
+/* css/global.css */
+
+/* === Reset & Base === */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html { font-size: 16px; }
+
+body {
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-sans);
+  line-height: var(--leading-normal);
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+html.lenis, html.lenis body { height: auto; }
+.lenis.lenis-smooth { scroll-behavior: auto !important; }
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: opacity 0.2s ease, color 0.2s ease;
+}
+
+ul { list-style: none; }
+
+img {
+  max-width: 100%;
+  display: block;
+  border-radius: var(--radius-md); 
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
+}
+
+/* === Typography Utilities === */
+.text-h1 {
+  font-size: var(--text-3xl);
+  font-weight: var(--weight-bold);
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+}
+
+.text-h2 {
+  font-size: var(--text-2xl);
+  font-weight: var(--weight-semibold);
+  margin-bottom: var(--space-md);
+  text-transform: uppercase;
+  letter-spacing: -0.01em;
+}
+
+.text-body {
+  font-size: var(--text-base);
+  color: var(--color-text-muted);
+  max-width: 60ch;
+  font-weight: 300;
+}
+
+/* === Buttons (Industrial) === */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.8rem 1.5rem;
+  border-radius: 0px; 
+  font-family: var(--font-mono);
+  font-weight: var(--weight-regular);
+  font-size: var(--text-xs);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.btn-secondary {
+  background: transparent;
+  color: var(--color-text);
+  border: 1px solid var(--color-border);
+}
+
+.btn-secondary:hover {
+  border-color: var(--color-primary);
+  background: var(--color-surface-soft);
+}
+
+/* === Custom Cursor === */
+body.has-custom-cursor { cursor: none; }
+body.has-custom-cursor a, body.has-custom-cursor button { cursor: none; }
+
+.cursor-dot {
+  width: 10px; height: 10px;
+  background: var(--color-primary);
+  border-radius: 0; /* Square */
+  position: fixed; top: 0; left: 0;
+  pointer-events: none; z-index: 9999;
+  mix-blend-mode: exclusion;
+  transition: transform 0.1s ease;
+}
+
+.cursor-dot.is-hovering {
+  transform: scale(4);
+  background: transparent;
+  border: 1px solid var(--color-primary);
+}

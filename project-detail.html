@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NEURAL INTERFACE | MULLER</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/detail.css"> 
+</head>
+<body>
+
+  <div class="cursor-dot"></div>
+
+  <header class="site-header">
+    <div class="container-fluid nav-flex">
+      <div class="logo"><a href="index.html">MULLER.</a></div>
+      <div class="nav-right">
+          <a href="projects.html" class="btn btn-secondary js-magnetic">BACK TO INDEX</a>
+      </div>
+    </div>
+  </header>
+
+  <div class="page-wrapper">
+      <main>
+        
+        <section class="detail-hero">
+            <div class="hero-overlay">
+                <div class="container-fluid">
+                    <h1 class="detail-title">NEURAL<br>INTERFACE</h1>
+                </div>
+            </div>
+        </section>
+
+        <section class="tech-specs">
+            <div class="container-fluid spec-grid">
+                <div class="spec-col">
+                    <span class="spec-label">CLIENT</span>
+                    <span class="spec-val">Neuralink Corp.</span>
+                </div>
+                <div class="spec-col">
+                    <span class="spec-label">SERVICES</span>
+                    <span class="spec-val">UI/UX, WebGL, Strategy</span>
+                </div>
+                <div class="spec-col">
+                    <span class="spec-label">YEAR</span>
+                    <span class="spec-val">2026</span>
+                </div>
+                <div class="spec-col">
+                    <span class="spec-label">LINK</span>
+                    <a href="#" class="spec-link">LIVE SITE ↗</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="detail-content">
+            <div class="container-fluid content-grid">
+                
+                <div class="content-left">
+                    <div class="sticky-wrapper">
+                        <h2 class="section-headline">THE<br>BRIEF</h2>
+                        <p class="text-body">
+                            The objective was to visualize the invisible. We created a digital interface 
+                            that bridges the gap between biological signals and digital interpretation.
+                            <br><br>
+                            Using WebGL and real-time data processing, the dashboard provides a 
+                            seamless experience for monitoring neural activity. The design language 
+                            is strictly utilitarian—form follows function.
+                        </p>
+                        <ul class="tech-stack-list">
+                            <li>React Three Fiber</li>
+                            <li>GSAP / Lenis</li>
+                            <li>Next.js 14</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="content-right">
+                    <figure class="detail-img">
+                        <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=1600" alt="Interface Detail 1">
+                        <figcaption>01_Dashboard_Overview</figcaption>
+                    </figure>
+                    <figure class="detail-img">
+                        <img src="https://images.unsplash.com/photo-1519810755548-39de21758d71?q=80&w=1600" alt="Interface Detail 2">
+                        <figcaption>02_Data_Visualization</figcaption>
+                    </figure>
+                    <div class="detail-video">
+                        <img src="https://images.unsplash.com/photo-1558655146-d09347e0b7a8?q=80&w=1600" alt="Video Placeholder">
+                        <div class="play-icon">▶</div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="detail-break">
+            <div class="container-fluid">
+                <h3 class="break-text">"A SYSTEM THAT FEELS LIKE AN EXTENSION OF THE MIND."</h3>
+            </div>
+        </section>
+
+        <section class="next-project">
+            <a href="#" class="next-link">
+                <span class="next-label">NEXT CASE</span>
+                <h2 class="next-title">QUANTUM<br>FINANCE</h2>
+                <div class="next-img-reveal">
+                    <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=1200" alt="Next Project">
+                </div>
+            </a>
+        </section>
+
+      </main>
+
+      <footer class="footer-archive">
+          <div class="container-fluid">
+              <div class="f-archive-inner">
+                  <span>MULLER © 2026</span>
+                  <a href="#" class="scroll-top-btn" onclick="window.scrollTo(0,0)">BACK TO TOP ↑</a>
+              </div>
+          </div>
+      </footer>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/@studio-freight/lenis@1.0.33/dist/lenis.min.js"></script>
+  <script src="js/detail.js"></script> 
+  <script src="js/main.js"></script> 
+</body>
+</html>

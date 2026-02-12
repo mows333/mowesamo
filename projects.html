@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ARCHIVE | MULLER</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/projects.css"> 
+</head>
+<body>
+
+  <div class="cursor-dot"></div>
+
+  <div class="project-preview-fixed">
+      <div class="preview-visual">
+          <img src="" alt="Preview" id="preview-img">
+      </div>
+  </div>
+
+  <header class="site-header">
+    <div class="container-fluid nav-flex">
+      <div class="logo"><a href="index.html">MULLER.</a></div>
+      <div class="nav-right">
+          <span class="mono-badge">SYS.ARCHIVE</span>
+          <a href="index.html" class="btn btn-secondary js-magnetic">CLOSE</a>
+      </div>
+    </div>
+  </header>
+
+  <div class="page-wrapper">
+      <main class="archive-main">
+        
+        <section class="hero-archive">
+            <div class="hero-grid-bg"></div>
+            <div class="hero-scan-line"></div>
+            
+            <div class="container-fluid hero-content-pad">
+                <div class="hero-meta-top">
+                    <span>DATABASE_V2</span>
+                    <span class="loading-counter">LOAD: 0%</span>
+                </div>
+
+                <div class="archive-type-wrap">
+                    <h1 class="hero-massive-text row-left">VISUAL</h1>
+                    <h1 class="hero-massive-text row-right text-stroke">INDEX</h1>
+                </div>
+
+                <div class="hero-meta-bottom">
+                    <div class="scroll-indicator">
+                        <div class="scroll-line"></div>
+                    </div>
+                    <span>TOTAL: 12 FILES</span>
+                </div>
+            </div>
+        </section>
+
+        <div class="archive-toolbar">
+            <div class="container-fluid toolbar-inner">
+                
+                <div class="filter-group">
+                    <button class="filter-btn active" data-filter="all">ALL</button>
+                    <button class="filter-btn" data-filter="dev">/ DEV</button>
+                    <button class="filter-btn" data-filter="design">/ DESIGN</button>
+                    <button class="filter-btn" data-filter="motion">/ MOTION</button>
+                </div>
+
+                <div class="view-group">
+                    <span class="view-label">LAYOUT:</span>
+                    <button class="view-btn active" data-view="list">[ LIST ]</button>
+                    <button class="view-btn" data-view="grid">[ GRID ]</button>
+                </div>
+
+            </div>
+        </div>
+
+        <section class="archive-list-section">
+            <div class="list-header">
+                <span class="col-id">ID</span>
+                <span class="col-client">CLIENT / PROJECT</span>
+                <span class="col-services">SERVICES</span>
+                <span class="col-year">YEAR</span>
+                <span class="col-link">LINK</span>
+            </div>
+
+            <div class="project-rows" id="project-container">
+                
+                <div class="project-row" data-category="design" data-img="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=1000">
+                    <div class="grid-img-holder">
+                        <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=800" loading="lazy">
+                    </div>
+                    <span class="col-id">001</span>
+                    <div class="col-client">
+                        <span class="p-name">NEURAL INTERFACE</span>
+                        <span class="p-loc">Berlin, DE</span>
+                    </div>
+                    <div class="col-services">
+                        <span>UI/UX</span><span>Strategy</span>
+                    </div>
+                    <span class="col-year">2026</span>
+                    <span class="col-link">↗</span>
+                    <a href="#" class="row-link"></a>
+                </div>
+
+                <div class="project-row" data-category="dev" data-img="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=1000">
+                    <div class="grid-img-holder">
+                        <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=800" loading="lazy">
+                    </div>
+                    <span class="col-id">002</span>
+                    <div class="col-client">
+                        <span class="p-name">QUANTUM FINANCE</span>
+                        <span class="p-loc">London, UK</span>
+                    </div>
+                    <div class="col-services">
+                        <span>React</span><span>WebGL</span>
+                    </div>
+                    <span class="col-year">2025</span>
+                    <span class="col-link">↗</span>
+                    <a href="#" class="row-link"></a>
+                </div>
+
+                <div class="project-row" data-category="motion" data-img="https://images.unsplash.com/photo-1605648916361-9bc12ad6a569?q=80&w=1000">
+                    <div class="grid-img-holder">
+                        <img src="https://images.unsplash.com/photo-1605648916361-9bc12ad6a569?q=80&w=800" loading="lazy">
+                    </div>
+                    <span class="col-id">003</span>
+                    <div class="col-client">
+                        <span class="p-name">AERO SYSTEMS</span>
+                        <span class="p-loc">Tokyo, JP</span>
+                    </div>
+                    <div class="col-services">
+                        <span>Motion</span><span>3D</span>
+                    </div>
+                    <span class="col-year">2025</span>
+                    <span class="col-link">↗</span>
+                    <a href="#" class="row-link"></a>
+                </div>
+
+                <div class="project-row" data-category="design" data-img="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=1000">
+                    <div class="grid-img-holder">
+                        <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=800" loading="lazy">
+                    </div>
+                    <span class="col-id">004</span>
+                    <div class="col-client">
+                        <span class="p-name">VOID FASHION</span>
+                        <span class="p-loc">Paris, FR</span>
+                    </div>
+                    <div class="col-services">
+                        <span>Art Direction</span>
+                    </div>
+                    <span class="col-year">2024</span>
+                    <span class="col-link">↗</span>
+                    <a href="#" class="row-link"></a>
+                </div>
+                
+                 <div class="project-row" data-category="dev" data-img="https://images.unsplash.com/photo-1519810755548-39de21758d71?q=80&w=1000">
+                    <div class="grid-img-holder">
+                        <img src="https://images.unsplash.com/photo-1519810755548-39de21758d71?q=80&w=800" loading="lazy">
+                    </div>
+                    <span class="col-id">005</span>
+                    <div class="col-client">
+                        <span class="p-name">GLOBE DATA</span>
+                        <span class="p-loc">New York, US</span>
+                    </div>
+                    <div class="col-services">
+                        <span>Full Stack</span><span>Data</span>
+                    </div>
+                    <span class="col-year">2024</span>
+                    <span class="col-link">↗</span>
+                    <a href="#" class="row-link"></a>
+                </div>
+            </div>
+        </section>
+
+      </main>
+
+      <footer class="footer-archive">
+          <div class="container-fluid">
+              <div class="f-archive-inner">
+                  <span>MULLER © 2026</span>
+                  <a href="#" class="scroll-top-btn" onclick="window.scrollTo(0,0)">BACK TO TOP ↑</a>
+              </div>
+          </div>
+      </footer>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/@studio-freight/lenis@1.0.33/dist/lenis.min.js"></script>
+  <script src="js/projects.js"></script> 
+</body>
+</html>

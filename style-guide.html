@@ -1,0 +1,122 @@
+<!-- style-guide.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Design System Style Guide</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Order is important: variables first, then global -->
+  <link rel="stylesheet" href="variables.css" />
+  <link rel="stylesheet" href="global.css" />
+</head>
+<body>
+  <main class="sg-page">
+    <!-- Header -->
+    <header class="sg-header">
+      <p class="text-muted">dotiy – design tokens</p>
+      <h1 class="text-display">Style Guide & Component Library</h1>
+      <p class="text-body text-muted">
+        This page documents global tokens, typography, spacing, and the
+        button system (primary, secondary, border & link).
+      </p>
+    </header>
+
+    <section class="sg-grid">
+      <!-- Colors -->
+      <section class="sg-section">
+        <h2 class="text-h2">Colors</h2>
+        <div class="sg-chips">
+          <div class="sg-chip" style="background: var(--color-primary); color: var(--color-primary-foreground);">
+            --color-primary
+          </div>
+          <div class="sg-chip" style="background: var(--color-secondary); color: var(--color-secondary-foreground);">
+            --color-secondary
+          </div>
+          <div class="sg-chip" style="background: var(--color-surface-soft);">
+            --color-surface-soft
+          </div>
+          <div class="sg-chip">
+            --color-border
+          </div>
+          <div class="sg-chip">
+            --color-text
+          </div>
+          <div class="sg-chip">
+            --color-text-muted
+          </div>
+          <div class="sg-chip">
+            <a href="#" style="color: var(--color-link); text-decoration: none;">--color-link</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Typography -->
+      <section class="sg-section">
+        <h2 class="text-h2">Typography</h2>
+        <div class="p-sm radius-md" style="background: var(--color-surface-soft);">
+          <p class="text-display">Display – .text-display</p>
+          <p class="text-h1">Heading 1 – .text-h1</p>
+          <p class="text-h2">Heading 2 – .text-h2</p>
+          <p class="text-h3">Heading 3 – .text-h3</p>
+          <p class="text-body">
+            Body text – .text-body – Lorem ipsum dolor sit amet, consectetur
+            adipisicing elit. Accusamus, amet.
+          </p>
+          <p class="text-muted">Muted text – .text-muted</p>
+        </div>
+      </section>
+
+      <!-- Spacing & Padding -->
+      <section class="sg-section">
+        <h2 class="text-h2">Global Padding</h2>
+        <p class="text-muted">Utilities: <code>.p-lg</code>, <code>.p-md</code>, <code>.p-sm</code></p>
+        <div class="sg-chips">
+          <div class="sg-chip p-sm radius-md">.p-sm</div>
+          <div class="sg-chip p-md radius-md">.p-md</div>
+          <div class="sg-chip p-lg radius-md">.p-lg</div>
+        </div>
+
+        <h3 class="text-h3" style="margin-top: var(--space-lg);">Spacing tokens</h3>
+        <div class="sg-chips">
+          <div class="sg-chip">--space-xs</div>
+          <div class="sg-chip">--space-sm</div>
+          <div class="sg-chip">--space-md</div>
+          <div class="sg-chip">--space-lg</div>
+          <div class="sg-chip">--space-xl</div>
+        </div>
+      </section>
+
+      <!-- Border Radius -->
+      <section class="sg-section">
+        <h2 class="text-h2">Border Radius</h2>
+        <p class="text-muted">Utilities: <code>.radius-sm</code>, <code>.radius-md</code>, <code>.radius-lg</code>, <code>.radius-full</code></p>
+
+        <div class="sg-chips">
+          <div class="sg-chip radius-sm">.radius-sm</div>
+          <div class="sg-chip radius-md">.radius-md</div>
+          <div class="sg-chip radius-lg">.radius-lg</div>
+          <div class="sg-chip radius-full">.radius-full</div>
+        </div>
+      </section>
+
+      <!-- Buttons -->
+      <section class="sg-section">
+        <h2 class="text-h2">Buttons</h2>
+        <p class="text-muted">
+          All buttons start with <code>.btn</code> and then a modifier:
+          <code>.btn--primary</code>, <code>.btn--secondary</code>,
+          <code>.btn--border</code>, <code>.btn--link</code>.
+        </p>
+
+        <div class="sg-chips">
+          <button class="btn btn--primary">Primary</button>
+          <button class="btn btn--secondary">Secondary Button</button>
+          <button class="btn btn--border">Border Button</button>
+          <button class="btn btn--link">Link Button</button>
+        </div>
+      </section>
+    </section>
+  </main>
+</body>
+</html>
